@@ -29,17 +29,17 @@ public class NilaiController {
 		return new ResponseEntity<>("OK", HttpStatus.OK);
 	}
 	
-	@GetMapping("/Nilai/nik/{nomorInduk}")
+	@GetMapping("/nilai/nik/{nomorInduk}")
 	public ResponseEntity<List<Nilai>> findByNik(@PathVariable String nomorInduk){
 		return new ResponseEntity<>(nilaiService.findByNik(nomorInduk), HttpStatus.OK);
 	}
 	
-	@GetMapping("/Nilai/nik/{mp}")
+	@GetMapping("/nilai/nik/{mp}")
 	public ResponseEntity<List<Nilai>> findByMataPelajaran(@PathVariable String mp){
 		return new ResponseEntity<>(nilaiService.findByMataPelajaran(mp), HttpStatus.OK);
 	}
 	
-	@GetMapping("/Nilai/nik/{nilai}")
+	@GetMapping("/nilai/nik/{nilai}")
 	public ResponseEntity<List<Nilai>> findByNilai(@PathVariable Integer nilai){
 		return new ResponseEntity<>(nilaiService.findByNilai(nilai), HttpStatus.OK);
 	}

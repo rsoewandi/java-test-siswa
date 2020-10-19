@@ -21,17 +21,17 @@ public class Nilai {
 	private String nomorInduk;
 	
 	@Column
-	private String mataPelajara;
+	private String mataPelajaran;
 	
 	@Column
 	private Integer nilai;
 	
 	public Nilai() {}
 
-	public Nilai(String nomorInduk, String mataPelajara, Integer nilai) {
+	public Nilai(String nomorInduk, String mataPelajaran, Integer nilai) {
 		super();
 		this.nomorInduk = nomorInduk;
-		this.mataPelajara = mataPelajara;
+		this.mataPelajaran = mataPelajaran;
 		this.nilai = nilai;
 	}
 
